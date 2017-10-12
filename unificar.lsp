@@ -3,13 +3,13 @@
 ;Unificar
 
 
-(defun unificar (elm1 elm2)
+(defun unificar (p_e1 p_e2)
 
 
-(prog (e1 e2)
+(prog (e1 e2 f1 f2 t1 t2 z1 z2 g1 g2)
 
-	(setf e1 elm1)
-	(setf e2 elm2)
+	(setf e1 p_e1)
+	(setf e2 p_e2)
 
 	(when(or (atomo e1) (atomo e2))
         ;si e1 no es un atomo
