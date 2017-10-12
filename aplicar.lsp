@@ -30,6 +30,8 @@
 			   
 			)
 		)
+
+		;Si no es variable
 		(unless (varp elm)
 			(setf temp elm) ;deja el elemento 
 		)
