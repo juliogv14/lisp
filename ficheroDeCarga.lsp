@@ -5,4 +5,4 @@
 (load "atomo.lsp")
 (load "unificar.lsp")
 (load "aplicar.lsp")
-(load "comparar.lsp")
+(load "componer.lsp")
