@@ -5,6 +5,11 @@
 (defun aplicar (reglaSustitucion lista)
 (prog (elm temp listaNueva)
 
+	;Si la regla de sustitucion esta vacia no hace nada
+	(when (equalp reglaSustitucion 'NADA)
+		(return lista)
+	)
+
 	;Se crea la lista donde se añaden los elementos cambiados
 	(setf listaNueva '())
 

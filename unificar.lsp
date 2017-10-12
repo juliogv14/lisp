@@ -12,7 +12,7 @@
 	(setf e2 elm2)
 
 	(when(or (atomo e1) (atomo e2))
-       ;si e1 no es un atomo
+        ;si e1 no es un atomo
 		(unless (atomo e1) 
 
 	        ;si e2 es un atomo
@@ -29,7 +29,7 @@
        
         ;si e1 y e2 son iguales
 		(when(equalp (list e1) (list e2))
-			(return '());nada	
+			(return 'NADA);nada	
 		)
 
         ;si e1 es variable
@@ -89,7 +89,8 @@
 
     ;linea 19
     (when(equalp z2 'FALLO)
-        (return 'FALLO)
+		(return 'pruebaPXX)
+        ;(return 'FALLO)
 
     );fin del when
 
