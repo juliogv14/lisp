@@ -5,6 +5,10 @@
 (defun aplicar (reglaSustitucion lista)
 (prog (sustituido sustituto)
 
+	(when (equalp reglaSustitucion 'NADA)
+		(return lista)
+	)
+
 	;Separar sustituto y sustituido
 	(setf sustituto (list (first reglaSustitucion)))
 	(setf sustituido (last reglaSustitucion))
