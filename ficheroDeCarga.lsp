@@ -6,3 +6,4 @@
 (load "unificar.lsp")
 (load "aplicar.lsp")
 (load "componer.lsp")
+(load "varp.lsp")
