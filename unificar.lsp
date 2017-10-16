@@ -27,7 +27,7 @@
 		);fin unless
        
        
-        ;si e1 y e2 son iguales
+	        ;si e1 y e2 son iguales
 		(when(equalp (list e1) (list e2))
 			(return 'NADA);nada	
 		)
@@ -95,8 +95,9 @@
     );fin del when
 
     ;hacer composicion z1 z2
-
-    (return 'bien)
+;    (return z1)
+    (composicion z1 z2)
+    
 
 
 );fin del prog
