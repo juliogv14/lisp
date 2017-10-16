@@ -14,7 +14,11 @@
 	(when (equalp z1 'NADA)
 		(return z2)
 	)
-	
+	;Si z2 es 'NADA coponer devolveria solo z1
+	(when (equalp z2 'NADA)
+		(return (list z1))
+	)
+
 	;Inicializar z1z2
 	(setf z1z2 '())
 
@@ -24,7 +28,6 @@
 	
 	;Aplicar las reglas de z2 sobre los sustitutos de z1
 	(dolist (regla z2)
-
 		(setf sustituto (aplicar regla sustituto))
 	)
 
